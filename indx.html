@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sport Gift Card Offer — Limited US Availability</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy: #1B2A44;
+    --navy-deep: #101B2E;
+    --paper: #F6F1E7;
+    --paper-dim: #EDE5D3;
+    --rally-red: #B23A32;
+    --gold: #B8894F;
+    --ink: #26221B;
+    --ink-soft: #5B5647;
+  }
+
+  *{ box-sizing:border-box; }
+
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', sans-serif;
+    line-height:1.55;
+  }
+
+  h1, h2, h3, .display{
+    font-family:'Source Serif 4', serif;
+    color:var(--navy-deep);
+    margin:0;
+  }
+
+  a{ color:inherit; }
+
+  .wrap{
+    max-width:760px;
+    margin:0 auto;
+    padding:0 24px;
+  }
+
+  /* ---- masthead ---- */
+  .masthead{
+    background:var(--navy);
+    color:var(--paper);
+    padding:14px 0;
+    border-bottom:3px solid var(--gold);
+  }
+  .masthead .wrap{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .masthead .brand{
+    font-family:'Source Serif 4', serif;
+    font-weight:600;
+    font-size:1.05rem;
+    letter-spacing:0.02em;
+  }
+  .masthead .brand span{ color:var(--gold); }
+  .masthead .tag{
+    font-size:0.78rem;
+    color:#C9C2AC;
+  }
+
+  /* ---- hero ---- */
+  .hero{
+    padding:56px 0 40px;
+    border-bottom:1px solid #DDD3B8;
+  }
+  .eligibility{
+    display:inline-block;
+    background:var(--paper-dim);
+    border:1px solid #D8CBA8;
+    color:var(--ink-soft);
+    font-size:0.82rem;
+    padding:5px 12px;
+    border-radius:2px;
+    margin-bottom:22px;
+  }
+  .hero h1{
+    font-size:2.5rem;
+    line-height:1.12;
+    max-width:14ch;
+  }
+  .hero .lede{
+    margin-top:18px;
+    font-size:1.08rem;
+    color:var(--ink-soft);
+    max-width:52ch;
+  }
+
+  .cta-row{
+    margin-top:32px;
+    display:flex;
+    align-items:center;
+    gap:18px;
+    flex-wrap:wrap;
+  }
+  .btn{
+    display:inline-block;
+    background:var(--rally-red);
+    color:var(--paper);
+    font-weight:600;
+    font-size:1rem;
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:2px;
+    letter-spacing:0.01em;
+    box-shadow:0 2px 0 #7E2620;
+    transition:transform .12s ease;
+  }
+  .btn:hover{ transform:translateY(-1px); }
+  .cta-note{
+    font-size:0.85rem;
+    color:var(--ink-soft);
+  }
+
+  /* ---- card panel ---- */
+  .panel{
+    margin-top:44px;
+    border:1px solid #D8CBA8;
+    background:#fff;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+  }
+  .panel .side{
+    padding:26px 28px;
+  }
+  .panel .side + .side{
+    border-left:1px solid #E6DEC5;
+  }
+  .panel .label{
+    font-size:0.72rem;
+    color:var(--ink-soft);
+    margin-bottom:6px;
+  }
+  .panel .value{
+    font-family:'Source Serif 4', serif;
+    font-size:1.5rem;
+    color:var(--navy-deep);
+  }
+
+  /* ---- how it works ---- */
+  .section{
+    padding:48px 0;
+    border-bottom:1px solid #DDD3B8;
+  }
+  .section h2{
+    font-size:1.6rem;
+    margin-bottom:22px;
+  }
+  .steps{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+  }
+  .step{
+    display:grid;
+    grid-template-columns:44px 1fr;
+    gap:16px;
+    align-items:start;
+  }
+  .step .num{
+    font-family:'Source Serif 4', serif;
+    font-size:1.4rem;
+    color:var(--gold);
+    border-bottom:2px solid var(--gold);
+    padding-bottom:2px;
+    width:fit-content;
+  }
+  .step p{
+    margin:4px 0 0;
+    color:var(--ink-soft);
+  }
+  .step strong{ color:var(--ink); }
+
+  /* ---- disclosure ---- */
+  .disclosure{
+    padding:36px 0 56px;
+  }
+  .disclosure h3{
+    font-size:1.05rem;
+    margin-bottom:10px;
+  }
+  .disclosure p{
+    font-size:0.86rem;
+    color:var(--ink-soft);
+    max-width:62ch;
+  }
+  .disclosure .flag{
+    display:inline-block;
+    margin-bottom:14px;
+    font-size:0.78rem;
+    color:var(--rally-red);
+    border:1px solid var(--rally-red);
+    padding:4px 10px;
+    border-radius:2px;
+  }
+
+  footer{
+    background:var(--navy);
+    color:#B9B29A;
+    font-size:0.8rem;
+    padding:22px 0 30px;
+  }
+
+  @media (max-width:600px){
+    .hero h1{ font-size:1.9rem; }
+    .panel{ grid-template-columns:1fr; }
+    .panel .side + .side{ border-left:none; border-top:1px solid #E6DEC5; }
+  }
+</style>
+</head>
+<body>
+
+<div class="masthead">
+  <div class="wrap">
+    <div class="brand">Rally<span>Rewards</span></div>
+    <div class="tag">Reader-supported offers</div>
+  </div>
+</div>
+
+<div class="hero">
+  <div class="wrap">
+    <span class="eligibility">Open to US residents only</span>
+    <h1>A $100 sport gift card offer, from a national retail brand</h1>
+    <p class="lede">This spot is currently running a promotion for a $100 gift card redeemable on sportswear. It's a free entry — no purchase required to register — and takes about two minutes.</p>
+
+    <div class="cta-row">
+      <a class="btn" href="https://singingfiles.com/show.php?l=0&u=1568667&id=75217" target="_blank" rel="noopener">Check my eligibility</a>
+      <span class="cta-note">Takes ~2 minutes · Email & zip code</span>
+    </div>
+
+    <div class="panel">
+      <div class="side">
+        <div class="label">Est. value</div>
+        <div class="value">$100</div>
+      </div>
+      <div class="side">
+        <div class="label">Availability</div>
+        <div class="value">United States</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="wrap">
+    <h2>How this works</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <div>
+          <strong>Confirm you're in the US.</strong>
+          <p>This particular offer is restricted to US residents. Confirming your zip code lets the advertiser check availability in your area.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <div>
+          <strong>Enter your email address.</strong>
+          <p>The advertiser will use this to send instructions for claiming the offer, along with any follow-up promotions — you can unsubscribe any time.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <div>
+          <strong>Follow the advertiser's page to finish.</strong>
+          <p>You'll land on the advertiser's own site to complete registration under their terms. Full eligibility rules are listed there before you submit anything.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="disclosure">
+  <div class="wrap">
+    <span class="flag">Advertising disclosure</span>
+    <h3>What you should know before you click</h3>
+    <p>This page is a paid advertising placement, not an offer from RallyRewards or from the brand named above. It links to a third-party advertiser's registration page. We do not control that page's content, terms, or whether the gift card is ultimately issued — that's governed entirely by the advertiser's own terms and conditions, which you should read before submitting your email or zip code. Availability, payout, and eligibility can change without notice. This is not a guarantee of any prize or reward.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    © 2026 RallyRewards. This site is not affiliated with, endorsed by, or sponsored by the brand referenced above.
+  </div>
+</footer>
+
+</body>
+</html>
